@@ -15,19 +15,19 @@ public class Main {
         Producto producto1 = new Producto();
         producto1.setNombre("Coca Cola");
         producto1.setCodigo("1");
-        producto1.setPrecio(100);
+        producto1.setPrecio(0);
         unCarrito.agregarProducto(producto1);
 
         Producto producto2 = new Producto();
         producto2.setNombre("Esponjas");
         producto2.setCodigo("G2");
-        producto2.setPrecio(50);
+        producto2.setPrecio(0);
         unCarrito.agregarProducto(producto2);
 
         Producto producto3 = new Producto();
         producto3.setNombre("Chocolates");
         producto3.setCodigo("L43");
-        producto3.setPrecio(20);
+        producto3.setPrecio(0);
         unCarrito.agregarProducto(producto3);
 
         try{
@@ -35,6 +35,7 @@ public class Main {
         }catch (CarritoConPrecioCero exc1){
             System.out.println(exc1.getMessage());
         }
+
         if(unCarrito.costoFinal() > 0){
             switch (args[0]) {
                 case "FIJO" -> {
