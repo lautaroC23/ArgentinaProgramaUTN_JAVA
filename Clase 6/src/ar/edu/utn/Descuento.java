@@ -1,3 +1,5 @@
+package ar.edu.utn;
+
 public abstract class Descuento {
     private float valorDesc;
     private float valorTope;

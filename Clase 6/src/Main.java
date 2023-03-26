@@ -1,6 +1,5 @@
-import ar.edu.utn.Carrito;
-import ar.edu.utn.Persona;
-import ar.edu.utn.Producto;
+import ar.edu.utn.*;
+
 import java.util.Scanner;
 public class Main { //parametros desde argumentos a main
 
